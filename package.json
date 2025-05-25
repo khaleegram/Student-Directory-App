@@ -1,0 +1,9 @@
+{
+  "name": "student-directory-app",
+  "version": "1.0.0",
+  "description": "Open Source Student Directory Web App",
+  "main": "index.html",
+  "scripts": {},
+  "author": "",
+  "license": "MIT"
+}
