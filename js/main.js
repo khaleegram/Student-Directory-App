@@ -31,6 +31,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+const photoInput = document.getElementById('photo');
+const photoPreview = document.getElementById('photoPreview');
+let uploadedPhotoBase64 = "";
+
+photoInput.addEventListener('change', function () {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      uploadedPhotoBase64 = e.target.result;
+      photoPreview.src = uploadedPhotoBase64;
+      photoPreview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
 
 function searchStudents() {
   const query = document.getElementById("search-bar").value.toLowerCase();
