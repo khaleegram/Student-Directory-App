@@ -30,6 +30,14 @@
   placeholder="Search by name"
   oninput="searchStudents()"
 />
+<select id="department-filter" onchange="filterByDepartment()">
+  <option value="">All Departments</option>
+  <option value="Computer Science">Computer Science</option>
+  <option value="Software Engineering">Software Engineering</option>
+  <option value="Information Technology">Information Technology</option>
+  <!-- Add more departments as needed -->
+</select>
+
 <section id="student-list">
   <h2>Student Directory</h2>
   <table id="students-table">
