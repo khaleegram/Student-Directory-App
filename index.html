@@ -11,7 +11,36 @@
 
   <main>
     <h1>Welcome to the Student Directory</h1>
-    <div id="student-list"></div>
+    <!-- Add Student Form -->
+<section id="add-student">
+  <h2>Add Student</h2>
+  <form id="student-form">
+    <input type="text" id="name" name="name" placeholder="Full Name" required>
+    <input type="text" id="regNo" name="regNo" placeholder="Reg Number" required>
+    <input type="text" id="department" name="department" placeholder="Department" required>
+    <input type="number" id="gpa" name="gpa" step="0.01" placeholder="GPA" required>
+    <input type="file" id="photo" name="photo" accept="image/*">
+    <button type="submit">Add Student</button>
+  </form>
+</section>
+    <!-- Student List Table -->
+<section id="student-list">
+  <h2>Student Directory</h2>
+  <table id="students-table">
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Reg No</th>
+        <th>Department</th>
+        <th>GPA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dynamic student rows will be added here using JavaScript -->
+    </tbody>
+  </table>
+</section>
   </main>
 
   <!-- Footer -->
