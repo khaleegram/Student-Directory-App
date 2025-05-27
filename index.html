@@ -19,7 +19,10 @@
     <input type="text" id="regNo" name="regNo" placeholder="Reg Number" required>
     <input type="text" id="department" name="department" placeholder="Department" required>
     <input type="number" id="gpa" name="gpa" step="0.01" placeholder="GPA" required>
-    <input type="file" id="photo" name="photo" accept="image/*">
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" accept="image/*" />
+    <img id="photoPreview" src="" alt="Photo Preview" width="100" style="display: none; margin-top: 10px;" />
+
     <button type="submit">Add Student</button>
   </form>
 </section>
