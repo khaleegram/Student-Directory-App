@@ -20,6 +20,11 @@ An open-source student directory system for displaying and managing student reco
 - pages/about.html, contact.html, student-profile.html
 - tests/test-cases.md
 
+### Group Members
+1. Muhammad Abdulrahman Umar - NAS/STE/21/1067 - Leader
+2. Rabiu Imam Muhammad - NAS/STE/20/1131 : Code cleanup to test and validate
+3. 
+
 ## Contribution Guide
 
 1. Fork the repository
