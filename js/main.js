@@ -3,6 +3,35 @@ window.onload = function () {
   loadComponent('components/footer.html', 'footer');
   loadStudents();
 };
+// Event listener for form submission
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("student-form");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Collect data from form fields
+      const student = {
+        regNo: document.getElementById("regNo").value,
+        fullName: document.getElementById("fullName").value,
+        department: document.getElementById("department").value,
+        gpa: parseFloat(document.getElementById("gpa").value),
+        photo: document.getElementById("photo").value,
+      };
+
+      // Save to localStorage (simulate storing in students.json)
+      let students = JSON.parse(localStorage.getItem("students")) || [];
+      students.push(student);
+      localStorage.setItem("students", JSON.stringify(students));
+
+      // Optionally clear form or show message
+      form.reset();
+      alert("Student data saved successfully!");
+    });
+  }
+});
+
 function searchStudents() {
   const query = document.getElementById("search-bar").value.toLowerCase();
   const tableBody = document.getElementById("student-table-body");
