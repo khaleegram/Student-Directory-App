@@ -108,3 +108,26 @@ function filterByDepartment() {
     tableBody.appendChild(row);
   });
 }
+const gpaHeader = document.getElementById('gpaHeader');
+let isAscending = true; // Track the sort order
+
+gpaHeader.addEventListener('click', function () {
+  sortTableByGPA(isAscending);
+  isAscending = !isAscending; // Toggle sorting order after each click
+});
+
+function sortTableByGPA(ascending) {
+  const rows = Array.from(document.querySelectorAll('table tbody tr'));
+  
+  // Sort rows by GPA
+  rows.sort((rowA, rowB) => {
+    const gpaA = parseFloat(rowA.querySelector('.gpa').textContent);
+    const gpaB = parseFloat(rowB.querySelector('.gpa').textContent);
+    
+    return ascending ? gpaA - gpaB : gpaB - gpaA;
+  });
+
+  // Append rows in sorted order
+  const tbody = document.querySelector('table tbody');
+  rows.forEach(row => tbody.appendChild(row));
+}
