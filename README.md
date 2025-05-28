@@ -65,24 +65,26 @@ This is a simple web-based Student Profile Management System built using HTML, C
 
 ## 👥 Team Members & Contributions
 
-| Reg Number | Name (If required) | Assigned Task | Files Involved |
-|-----------|---------------------|----------------|----------------|
-| NAS/STE/21/1065 | — | Created the HTML form to add student details | `index.html`, `pages/student-profile.html` |
-| NAS/STE/21/1066 | — | Created the HTML table to display the list of students | `index.html`, `pages/student-profile.html` |
-| NAS/STE/21/1068 | — | Wrote CSS styles for the form and table layout | `css/style.css` |
-| NAS/STE/21/1069 | — | Wrote JavaScript to store student data when the form is submitted | `js/main.js`, `data/students.json` |
-| NAS/STE/21/1070 | — | Wrote JavaScript to display student data in the table | `js/main.js` |
-| NAS/STE/21/1071 | — | Implemented a search bar to search students by name | `js/main.js`, `index.html` |
-| NAS/STE/21/1072 | — | Added filter to display students by department | `js/main.js`, `index.html` |
-| NAS/STE/21/1073 | — | Added form validation to ensure all fields are filled correctly | `js/utils.js`, `js/main.js`, `index.html` |
-| NAS/STE/21/1074 | — | Added GPA calculation logic | `js/main.js`, `js/utils.js` |
-| NAS/STE/21/1076 | — | Added image upload feature for student photos | `js/main.js`, `components/navbar.html` |
-| NAS/STE/21/1078 | — | Enabled sorting the table by GPA | `js/main.js` |
-| NAS/STE/21/1080 | — | Made the UI mobile-friendly and responsive | `css/style.css`, `index.html` |
-| NAS/STE/21/1081 | — | Tested and fixed bugs in the JavaScript functionality | `tests/test-cases.md`, `js/main.js`, `js/utils.js` |
-| NAS/STE/21/1082 | — | Wrote this `README.md` file for the project | `README.md` |
-| NAS/STE/21/1083 | — | Added LICENSE and contribution guide | `LICENSE`, `CONTRIBUTING.md` |
-| NAS/STE/20/1131 | — | Final code cleanup and optimization | All files |
+| Reg Number      | Assigned Task                                             | Files Used / Created                               |
+| --------------- | --------------------------------------------------------- | -------------------------------------------------- |
+| NAS/STE/21/1067 | Group Leader                                              | All files                                          |
+| NAS/STE/21/1081 | Created the HTML form to add student details              | `index.html`, `pages/student-profile.html`         |
+| NAS/STE/21/1073 | Created the HTML table to display the list of students    | `index.html`, `pages/student-profile.html`         |
+| NAS/STE/21/1068 | Wrote CSS styles for the form and table layout            | `css/style.css`                                    |
+| NAS/STE/21/1069 | Wrote JavaScript to store student data on form submission | `js/main.js`, `data/students.json`                 |
+| NAS/STE/21/1070 | Wrote JavaScript to display student data in the table     | `js/main.js`                                       |
+| NAS/STE/21/1071 | Implemented a search bar to search students by name       | `js/main.js`, `index.html`                         |
+| NAS/STE/21/1072 | Added filter to display students by department            | `js/main.js`, `index.html`                         |
+| NAS/STE/21/1066 | Added form validation to ensure all fields are correct    | `js/utils.js`, `js/main.js`, `index.html`          |
+| NAS/STE/21/1074 | Added GPA calculation or processing logic                 | `js/main.js`, `js/utils.js`                        |
+| NAS/STE/21/1076 | Added image upload for student photos                     | `js/main.js`, `components/navbar.html`             |
+| NAS/STE/21/1078 | Enabled sorting the table by GPA                          | `js/main.js`                                       |
+| NAS/STE/21/1080 | Made the UI mobile-friendly and responsive                | `css/style.css`, `index.html`                      |
+| NAS/STE/21/1065 | Tested and fixed bugs in the JavaScript functionality     | `tests/test-cases.md`, `js/main.js`, `js/utils.js` |
+| NAS/STE/20/1131 | Wrote a clear `README.md` for the project                 | `README.md`                                        |
+| NAS/STE/21/1083 | Added `LICENSE` and open-source contribution guide        | `LICENSE`, `CONTRIBUTING.md`                       |
+| NAS/STE/21/1082 | Final code cleanup and optimization                       | All files                                          |
+
 
 ---
 
