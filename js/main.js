@@ -1,3 +1,5 @@
+import { validateForm } from './utils.js';
+
 window.onload = function () {
   loadComponent('components/navbar.html', 'navbar');
   loadComponent('components/footer.html', 'footer');
@@ -12,13 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
 
       // Collect data from form fields
-      const student = {
-        regNo: document.getElementById("regNo").value,
-        fullName: document.getElementById("fullName").value,
-        department: document.getElementById("department").value,
-        gpa: parseFloat(document.getElementById("gpa").value),
-        photo: document.getElementById("photo").value,
-      };
+    const student = {
+  regNo: document.getElementById("regNo").value,
+  fullName: document.getElementById("fullName").value,
+  department: document.getElementById("department").value,
+  gpa: parseFloat(document.getElementById("gpa").value),
+  photo: document.getElementById("photo").value,
+};
+
+const errors = validateForm(student);
+
+if (errors.length > 0) {
+  alert("Form Errors:\n" + errors.join("\n"));
+  return;
+}
 
       // Save to localStorage (simulate storing in students.json)
       let students = JSON.parse(localStorage.getItem("students")) || [];
